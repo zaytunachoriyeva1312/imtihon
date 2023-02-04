@@ -1,0 +1,88 @@
+.intro{
+    background-image:url(./../../img/line.svg),url(./../../img/strelka.svg) ,url(./../../img/intro.png);
+    background-repeat: no-repeat;
+    background-position: left center, calc(70%) calc(65%) ;
+    background-size: 202px, 505px, cover;
+    &__title{
+        padding-top: 153px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        width: 500px;
+
+    }
+
+    &__text{
+        padding-top: 40px;
+        width: 405px;
+        font-family: 'Lexend Deca';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 25px;
+        color: #FFFFFF;
+        margin-left: 65px;
+        margin-bottom: 40px;
+    }
+&__btn{
+    margin-left: 65px;
+    margin-bottom: 152px;
+}
+}
+@media only screen and (max-width:768px){
+    .intro{
+        background-position: left calc(220%), calc(-70%) calc(70%);
+        padding-bottom: 217px;
+        &__title{
+            padding-top: 137px;
+            width: 573px;
+            text-align: center;
+            margin-left: 70px;
+
+
+             }
+         &__text{
+             height: 75px;
+             padding-top: 24px;
+             width: 573px;
+             text-align: center;
+             
+         }
+         &__btn{
+             margin-top: 32px;
+             margin-right: auto;
+             margin-left: auto;
+             display: block;
+             
+         }
+    }
+}
+@media only screen and (max-width:425px){
+   .intro{
+    background-position: left calc(220%), calc(400%) calc(90%);
+    padding-bottom: 34px;
+  &__title{
+    padding-top: 115px;
+    width: 311px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: -1.78571px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ &__text{
+     width: 311px;
+     margin-left: auto;
+     margin-right: auto;
+     font-size: 15px;
+     margin-bottom: 94px;
+     line-height: 25px;
+ }
+
+   }
+}

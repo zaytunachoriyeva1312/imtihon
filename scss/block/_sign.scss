@@ -1,0 +1,95 @@
+.sign{
+    background-image: url(./../../img/sign-bg.png);
+    background-position: right bottom;
+    background-color: #495567;
+    background-repeat: no-repeat;
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        margin-top: 102px;
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        width: 415px;
+        margin-bottom: 102px;
+    }
+    &__list{
+        display: flex;
+        margin-left: 336px;
+        align-items: center;
+        gap: 18px;
+    }
+    &__link{
+       display: flex;
+       align-items: center;
+       gap: 11px;
+       padding:8px 16px;
+       background-color: #E5ECF4;
+       border-radius: 4px;;
+    }
+    &__content-text{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: -0.446429px;
+        color: #495567;
+
+    }
+    &__content-title{
+        font-family: 'Space Mono';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.892857px;
+        color: #495567;
+    }
+}
+@media only screen and (max-width:768px){
+  .sign{
+    &__container{
+        flex-direction: column;
+        justify-content: center;
+     }
+     &__title{
+         width: 457px;
+         text-align: center;
+         margin-bottom: 40px;
+     }
+     &__list{
+         margin-left: auto;
+         margin-right: auto;
+         margin-bottom: 62px;
+     }
+  }
+}
+@media only screen and (max-width:425px){
+    .sign{
+        &__container{
+            flex-direction: column;
+            justify-content: center;
+         }
+         &__title{
+             width: 311px;
+             text-align: center;
+             margin-bottom: 40px;
+             font-size: 32px;
+             line-height: 32px;
+         }
+         &__list{
+             margin-left: auto;
+             margin-right: auto;
+             margin-bottom: 62px;
+         }
+
+    }
+}
